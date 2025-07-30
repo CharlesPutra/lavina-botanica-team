@@ -31,4 +31,34 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             `;
     document.head.appendChild(style);
+
+    // bubble end
+
+    // kirim pesan wa 
+      const produkSelect = document.getElementById("produk");
+//   const previewImg = document.getElementById("previewProduk");
+
+  // Ubah gambar saat dropdown berubah
+//   produkSelect.addEventListener("change", function () {
+//     const selectedOption = produkSelect.options[produkSelect.selectedIndex];
+//     const imgSrc = selectedOption.getAttribute("data-img");
+//     previewImg.src = imgSrc;
+//   });
+
+  // Kirim ke WhatsApp
+  document.getElementById("waForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+    const produk = produkSelect.value;
+    const jumlah = document.getElementById("jumlah").value;
+    const alamat = document.getElementById("alamat").value;
+
+    const pesan = `Halo Admin,%0ASaya ingin memesan:%0A- Nama: ${nama}%0A- Produk: ${produk}%0A- Jumlah: ${jumlah}%0A- Alamat: ${alamat}`;
+
+    const nomorWa = "6281234567890"; // Ganti dengan nomor adminmu
+    const linkWa = `https://wa.me/${nomorWa}?text=${pesan}`;
+    window.open(linkWa, '_blank');
+  });
+    // kirim pesan wa end
 });

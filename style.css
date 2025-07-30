@@ -242,3 +242,23 @@ body {
 }
 
 /* testimoni end */
+
+/* form modal */
+  .modal-content {
+    border-radius: 15px;
+  }
+
+  .btn-success {
+    background-color: #6fa87a;
+    border: none;
+  }
+
+  .btn-success:hover {
+    background-color: #5b775d;
+  }
+
+  #previewProduk {
+    height: 120px;
+    object-fit: cover;
+  }
+/* form modal end */
