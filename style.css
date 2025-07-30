@@ -50,3 +50,69 @@ body {
   background-color: #5b775d;
 }
 /* navbar :end */
+
+/* hero section */
+.hero-1 {
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    background-image: url(img/herosection.jpeg);
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+     background-size: cover; /* Membuat gambar menutupi seluruh layar */
+      background-position: center; /* Memusatkan gambar */
+      background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+      height: 80vh; /* Tinggi layar penuh */
+
+}
+
+.hero-1 .hero-title {
+    font-size: 3.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-1 .hero-subtitle {
+    position: relative;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+.hero-1 .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: red; */
+    border-radius: 50%;
+    animation: rise 10s infinite ease-in;
+}
+
+@keyframes rise {
+    0% {
+        bottom: -100px;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        bottom: 1080px;
+        opacity: 0;
+    }
+}
+
+/* hero section end */
