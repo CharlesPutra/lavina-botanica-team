@@ -3,6 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f8f9f8;
 }
+
 /* body end */
 /* navbar */
 .navbar .nav-link {
@@ -21,7 +22,8 @@ body {
   bottom: -5px;
   width: 0;
   height: 3px;
-  background-color: #6d8c6f; /* warna sage */
+  background-color: #6d8c6f;
+  /* warna sage */
   transition: width 0.3s ease;
 }
 
@@ -41,6 +43,7 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
 .btn-dark {
   background-color: #6d8c6f;
   border: none;
@@ -49,70 +52,130 @@ body {
 .btn-dark:hover {
   background-color: #5b775d;
 }
+
 /* navbar :end */
 
 /* hero section */
 .hero-1 {
-    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-    background-image: url(img/herosection.jpeg);
-    color: white;
-    text-align: center;
-    padding: 120px 0;
-    position: relative;
-    overflow: hidden;
-     background-size: cover; /* Membuat gambar menutupi seluruh layar */
-      background-position: center; /* Memusatkan gambar */
-      background-repeat: no-repeat; /* Mencegah pengulangan gambar */
-      height: 80vh; /* Tinggi layar penuh */
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background-image: url(img/herosection.jpeg);
+  color: white;
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  /* Membuat gambar menutupi seluruh layar */
+  background-position: center;
+  /* Memusatkan gambar */
+  background-repeat: no-repeat;
+  /* Mencegah pengulangan gambar */
+  height: 80vh;
+  /* Tinggi layar penuh */
 
 }
 
 .hero-1 .hero-title {
-    font-size: 3.5rem;
-    position: relative;
-    z-index: 2;
+  font-size: 3.5rem;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-1 .hero-subtitle {
-    position: relative;
-    z-index: 2;
-    opacity: 0.9;
+  position: relative;
+  z-index: 2;
+  opacity: 0.9;
 }
 
 .hero-1 .bubbles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .bubble {
-    position: absolute;
-    bottom: -100px;
-    background: rgba(255, 255, 255, 0.1);
-    /* background: red; */
-    border-radius: 50%;
-    animation: rise 10s infinite ease-in;
+  position: absolute;
+  bottom: -100px;
+  background: rgba(255, 255, 255, 0.1);
+  /* background: red; */
+  border-radius: 50%;
+  animation: rise 10s infinite ease-in;
 }
 
 @keyframes rise {
-    0% {
-        bottom: -100px;
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
+    opacity: 1;
+  }
 
-    50% {
-        transform: translateX(100px);
-    }
+  50% {
+    transform: translateX(100px);
+  }
 
-    100% {
-        bottom: 1080px;
-        opacity: 0;
-    }
+  100% {
+    bottom: 1080px;
+    opacity: 0;
+  }
 }
 
 /* hero section end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* testimoni */
+.testimonial-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-track {
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+  width: max-content;
+  gap: 1rem;
+}
+
+.min-w-300 {
+  min-width: 300px;
+  max-width: 300px;
+  flex-shrink: 0;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-warning {
+  color: #ffc107;
+  /* warna bintang emas */
+}
+
+.text-muted {
+  color: #666;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* testimoni end */
