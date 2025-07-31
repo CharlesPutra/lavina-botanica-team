@@ -380,3 +380,11 @@ iframe {
 }
 
 /* footer end */
+
+.produk-card {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.produk-card:hover {
+  transform: scale(1.03);
+}

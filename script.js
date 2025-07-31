@@ -62,3 +62,16 @@ document.addEventListener('DOMContentLoaded', function () {
   });
     // kirim pesan wa end
 });
+
+  function tambah() {
+    var jumlah = document.getElementById("jumlah");
+    jumlah.value = parseInt(jumlah.value) + 1;
+  }
+
+  function kurang() {
+    var jumlah = document.getElementById("jumlah");
+    if (parseInt(jumlah.value) > 1) {
+      jumlah.value = parseInt(jumlah.value) - 1;
+    }
+  }
+
