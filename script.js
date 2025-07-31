@@ -6,10 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const bubble = document.createElement('div');
         bubble.classList.add('bubble');
 
-        const size = Math.random() * 100 + 10;
-        bubble.style.width = `${size}px`;
-        bubble.style.height = `${size}px`;
-        bubble.style.left = `${Math.random() * 100}%`;
+      const size = Math.random() * 60 + 20; // lebih kecil & aman
+bubble.style.width = `${size}px`;
+bubble.style.height = `${size}px`;
+bubble.style.left = `${Math.random() * (100 - size / window.innerWidth * 100)}%`;
+
         bubble.style.animationDelay = `${Math.random() * 10}s`;
         bubble.style.animationDuration = `${Math.random() * 10 + 10}s`;
 
@@ -74,4 +75,4 @@ document.addEventListener('DOMContentLoaded', function () {
       jumlah.value = parseInt(jumlah.value) - 1;
     }
   }
-
+  

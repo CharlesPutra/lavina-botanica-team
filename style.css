@@ -1,3 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+footer {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* body */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -254,14 +277,15 @@ body {
 .testimonial-wrapper {
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .testimonial-track {
   display: flex;
+  width: 200%; /* ubah jadi persentase, bukan max-content */
   animation: scroll-left 30s linear infinite;
-  width: max-content;
-  gap: 1rem;
 }
+
 
 .min-w-300 {
   min-width: 300px;
