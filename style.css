@@ -335,6 +335,7 @@ body {
 
 #contact .btn-success {
   background-color: #6fa87a;
+  border-radius: 50px;
   border: none;
 }
 
