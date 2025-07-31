@@ -38,10 +38,16 @@ body {
   transition: all 0.3s ease;
 }
 
+.dropdown-item:hover {
+  background-color:  #5b775d;
+  color: #fff;
+}
+
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
   opacity: 1;
   transform: translateY(0);
+  /* background-color: #6d8c6f; */
 }
 
 .btn-dark {
@@ -136,6 +142,24 @@ body {
   overflow: hidden;
   z-index: 0;
 }
+
+.bubble-background .bubble {
+  position: absolute;
+  border-radius: 70%;
+  opacity: 0.5;
+  animation: floatBubble 10s infinite ease-in-out;
+  background-color: white;
+}
+
+@keyframes floatBubble {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
 
 .bubble-background::before {
   content: '';
