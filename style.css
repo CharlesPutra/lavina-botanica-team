@@ -39,7 +39,7 @@ body {
 }
 
 .dropdown-item:hover {
-  background-color:  #5b775d;
+  background-color: #5b775d;
   color: #fff;
 }
 
@@ -133,8 +133,15 @@ body {
 
 /*about us*/
 @keyframes floatUpDown {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 .bubble-background {
@@ -152,9 +159,12 @@ body {
 }
 
 @keyframes floatBubble {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -188,13 +198,27 @@ body {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(30px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
 }
 
 @keyframes floatReverse {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-30px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
 }
 
 .best-seller-section {
@@ -202,7 +226,8 @@ body {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  padding-bottom: 200px; /* tambahan agar tidak ketiban SVG */
+  padding-bottom: 200px;
+  /* tambahan agar tidak ketiban SVG */
 }
 
 /* SVG wave */
@@ -212,7 +237,8 @@ body {
   left: 0;
   width: 100%;
   line-height: 0;
-  z-index: -1; /* biar nggak nutupin konten */
+  z-index: -1;
+  /* biar nggak nutupin konten */
 }
 
 .best-seller-section .wave-top svg {
@@ -220,6 +246,7 @@ body {
   width: 100%;
   height: 120px;
 }
+
 /*about us end*/
 
 
@@ -268,21 +295,88 @@ body {
 /* testimoni end */
 
 /* form modal */
-  .modal-content {
-    border-radius: 15px;
-  }
+.modal-content {
+  border-radius: 15px;
+}
 
-  .btn-success {
-    background-color: #6fa87a;
-    border: none;
-  }
+.btn-success {
+  background-color: #6fa87a;
+  border: none;
+}
 
-  .btn-success:hover {
-    background-color: #5b775d;
-  }
+.btn-success:hover {
+  background-color: #5b775d;
+}
 
-  #previewProduk {
-    height: 120px;
-    object-fit: cover;
-  }
+#previewProduk {
+  height: 120px;
+  object-fit: cover;
+}
+
 /* form modal end */
+
+
+
+/* contact */
+
+#contact {
+  background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+}
+
+#contact h2 {
+  font-size: 2rem;
+}
+
+#contact input,
+#contact textarea {
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+#contact .btn-success {
+  background-color: #6fa87a;
+  border: none;
+}
+
+#contact .btn-success:hover {
+  background-color: #5b775d;
+}
+
+#contact h2 {
+  font-size: 2rem;
+}
+
+#contact .btn-outline-success {
+  border-radius: 8px;
+}
+
+iframe {
+  border-radius: 12px;
+}
+
+/* contact end */
+
+/* footer */
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffebcd;
+  text-decoration: underline;
+}
+
+.footer-icon {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #6fa87a;
+}
+
+/* footer end */
