@@ -413,3 +413,26 @@ iframe {
 .produk-card:hover {
   transform: scale(1.03);
 }
+
+/* resposive */
+@media (max-width: 576px){
+  /* .produk-card .img-card{
+    height: 10px;
+    width: 10px;
+  } */
+  .row{
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  .col{
+    min-width: 100px;
+    flex-shrink: 0;
+  }
+   .card{
+    width: 150px;
+    height: 150px;
+   }
+  img.card{
+   max-width: 100px;
+  }
+}
