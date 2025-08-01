@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Kirim ke WhatsApp
   function kirimWhatsApp() {
-    const admin = "6283830031659"; // ← Ganti dengan nomor asli kamu
-    const text = `Halo Saya Customers LAVINA BOTANICA,%0ASaya ingin Bertanya}`;
+    const admin = "6283830031659";
+    const text = "Halo Saya Customers LAVINA BOTANICA,%0ASaya ingin Bertanya";
     window.open(`https://wa.me/${admin}?text=${encodeURIComponent(text)}`, '_blank');
-}
+  }
   // document.getElementById("waWeb").addEventListener("submit", function (e) {
   //   e.preventDefault();
 
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var jumlah = document.getElementById("jumlah");
     jumlah.value = parseInt(jumlah.value) + 1;
   }
-  
+
   function kurang() {
     var jumlah = document.getElementById("jumlah");
     if (parseInt(jumlah.value) > 1) {
