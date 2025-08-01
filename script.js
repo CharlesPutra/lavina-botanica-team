@@ -43,21 +43,20 @@ bubble.style.left = `${Math.random() * (100 - size / window.innerWidth * 100)}%`
 //   produkSelect.addEventListener("change", function () {
 //     const selectedOption = produkSelect.options[produkSelect.selectedIndex];
 //     const imgSrc = selectedOption.getAttribute("data-img");
-//     previewImg.src = imgSrc;
+//     p reviewImg.src = imgSrc;
 //   });
 
   // Kirim ke WhatsApp
-  document.getElementById("waForm").addEventListener("submit", function (e) {
+  document.getElementById("waWeb").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const nama = document.getElementById("nama").value;
-    const produk = produkSelect.value;
-    const jumlah = document.getElementById("jumlah").value;
-    const alamat = document.getElementById("alamat").value;
-
-    const pesan = `Halo Admin,%0ASaya ingin memesan:%0A- Nama: ${nama}%0A- Produk: ${produk}%0A- Jumlah: ${jumlah}%0A- Alamat: ${alamat}`;
-
-    const nomorWa = "6281234567890"; // Ganti dengan nomor adminmu
+    // const nama = document.getElementById("nama").value;
+    // const produk = produkSelect.value;
+    // const jumlah = document.getElementById("jumlah").value;
+    // const alamat = document.getElementById("alamat").value;
+ 
+    const pesan = `Halo Saya Customers LAVINA BOTANICA,%0ASaya ingin Bertanya`;
+    const nomorWa = "6283830031659"; // Ganti dengan nomor adminmu
     const linkWa = `https://wa.me/${nomorWa}?text=${pesan}`;
     window.open(linkWa, '_blank');
   });
