@@ -179,19 +179,20 @@
       <!-- Hiasan Daun Kiri -->
 <img src="img/daun.png" 
      alt="Leaf Left"
-     style="position: absolute; top: 90px; left: 5%; width: 200px; height:200px; opacity: 0.2; z-index: 2; transform: rotate(-25deg);" />
+     style="position: absolute; top: 90px; left: 5%; width: 200px; height:200px; opacity: 0.2; z-index: 1; transform: rotate(-25deg);" />
 
 <!-- Hiasan Daun Kanan -->
 <img src="img/daun - Copy.png"
      alt="Leaf Right"
-     style="position: absolute; top: 90px; right: 5%; width: 100px; height: 100px; opacity: 0.2; z-index: 2; transform: rotate(25deg) scaleX(-1);" />
+     style="position: absolute; top: 90px; right: 5%; width: 100px; height: 100px; opacity: 0.2; z-index: ; transform: rotate(25deg) scaleX(-1);" />
 
 
       <!-- Produk 1 -->
       <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-duration="1200">
         <div class="col-md-6 text-center">
-          <img src="img/mousturizer_putih-removebg-preview.png" alt="Brightening Moisturizer" class="img-fluid floating"
+            <img src="img/mousturizer_putih-removebg-preview.png" alt="Brightening Moisturizer" class="img-fluid floating"
             style="max-width: 300px;z-index: 1;"/>
+          </div>
         </div>
         <div class="col-md-6">
           <h3 class="fw-bold" style="color: #6d8c6f;">
@@ -208,7 +209,9 @@
       <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-up" data-aos-duration="1200"
         data-aos-delay="200">
         <div class="col-md-6 text-center">
-          <img src="img/sunscreen.png" alt="Daily Sunscreen" class="img-fluid floating" style="max-width: 300px;" />
+          <div class="produk" style="position: relative; z-index: 2;">
+            <img src="img/sunscreen.png" alt="Daily Sunscreen" class="img-fluid floating" style="max-width: 300px;" />
+          </div>
 
           <img src="img/daun - Copy.png" 
      alt="Leaf Left"
@@ -221,7 +224,6 @@
 <img src="img/daun.png"
      alt="Leaf Right"
      style="position: absolute; top: 90px; right: 5%; width: 200px; height:200px; opacity: 0.2; z-index: 1; transform: rotate(25deg) scaleX(-1);" />
-        
           <h3 class="fw-bold" style="color: #a2655d;">
             Daily Sunscreen <span class="badge bg-success">Best Seller</span>
           </h3>
@@ -241,15 +243,17 @@
      alt="Leaf Right"
      style="position: absolute; top: 90px; right: 5%; width: 100px; height: 100px; opacity: 0.2; z-index: 1; transform: rotate(25deg) scaleX(-1);" />
 
-          <img src="img/lip.png" alt="Nourishing Lip Serum" class="img-fluid floating" style="max-width: 300px;" />
-        </div>
+          <div class="produk" style="position: relative; z-index: 2;">
+            <img src="img/lip.png" alt="Nourishing Lip Serum" class="img-fluid floating" style="max-width: 300px;" />
+          </div>
+          </div>
         <div class="col-md-6">
 
 
       <!-- Hiasan Daun Kiri -->
 <img src="img/daun.png" 
      alt="Leaf Left"
-     style="position: absolute; top: 1px; left: 0%; width: 200px; height:200px; opacity: 0.2; z-index: 1; transform: rotate(-25deg);" />
+     style="position: absolute; top: 1px; left: 2%; width: 200px; height:200px; opacity: 0.2; z-index: 1; transform: rotate(-25deg);" />
 
           <h3 class="fw-bold" style="color: #4c8782;">
             Nourishing Lip Serum <span class="badge bg-success">Best Seller</span>
@@ -1097,7 +1101,7 @@
     <!-- Contact -->
 <section id="contact" class="py-5" style="background-color: #f4f4f4;">
   <div class="container">
-    <div class="row justify-content-center mb-4 text-center">
+    <div class="row justify-content-center mb-4 text-center" style="overflow: hidden;">
       <div class="col-lg-8">
         <h2 class="text-center pt-3"
           style="color: #6d8c6f; font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 2.7rem;">
@@ -1107,7 +1111,7 @@
       </div>
     </div>
 
-    <div class="row g-4">
+    <div class="row g-4" style="overflow: hidden;">
       <!-- Google Maps -->
       <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
         <div class="rounded overflow-hidden shadow" style="height: 100%; min-height: 300px;">

@@ -352,6 +352,8 @@ body {
 
 #contact {
   background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+  overflow: hidden;
+  
 }
 
 #contact h2 {
@@ -362,6 +364,7 @@ body {
 #contact textarea {
   border-radius: 10px;
   box-shadow: none;
+  overflow: hidden;
 }
 
 #contact .btn-success {
@@ -384,6 +387,7 @@ body {
 
 iframe {
   border-radius: 12px;
+  overflow: hidden;
 }
 
 /* contact end */
@@ -480,5 +484,9 @@ iframe {
     width: 100%;
     text-align: center;
   }
+}
+
+@media (max-width: 576px) {
+
 }
 
