@@ -1,3 +1,21 @@
+//navbar
+function closeDropdown() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    if (window.innerWidth < 992) {
+      const dropdown = document.querySelector('.dropdown-menu.show');
+      if (dropdown) {
+        dropdown.classList.remove('show');
+      }
+      if (navbarCollapse.classList.contains('show')) {
+        navbarToggler.click(); // ini untuk menutup nav di mobile
+      }
+    }
+  }
+//end navbar
+
+
 // Bubble Animation for Hero 1
 document.addEventListener('DOMContentLoaded', function () {
   // Create bubbles

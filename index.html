@@ -48,24 +48,20 @@
               href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold animate__animated animate__fadeInDown" style="animation-duration: 3s;"
-              href="#about">About Us</a>
-          </li>
-          <li class="nav-item dropdown animate__animated animate__fadeInDown" style="animation-duration: 3s;">
-            <a class="nav-link dropdown-toggle fw-bold" href="#" id="produkDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Produk
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="produkDropdown">
-              <li><a class="dropdown-item" href="#facewash" onclick="scrollToKategori('facewash')">Face Wash</a></li>
-              <li><a class="dropdown-item" href="#moisturizer" onclick="scrollToKategori('moisturizer')">Moisturizer</a>
-              </li>
-              <li><a class="dropdown-item" href="#serum" onclick="scrollToKategori('serum')">Serum</a></li>
-              <li><a class="dropdown-item" href="#sunscreen" onclick="scrollToKategori('sunscreen')">Sunscreen</a></li>
-              <li><a class="dropdown-item" href="#mask" onclick="scrollToKategori('masker')">Masker & Lip Serum</a></li>
-              <li><a class="dropdown-item" href="#clenser" onclick="scrollToKategori('clenser')">Clenser</a></li>
-            </ul>
-          </li>
+            <li class="nav-item dropdown animate__animated animate__fadeInDown" style="animation-duration: 3s;">
+  <a class="nav-link dropdown-toggle fw-bold" href="#" id="produkDropdown" role="button"
+    data-bs-toggle="dropdown"  data-bs-auto-close="outside" aria-expanded="false">
+    Produk
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="produkDropdown">
+    <li><a class="dropdown-item" href="#facewash" onclick="scrollToKategori('facewash'); closeDropdown()">Face Wash</a></li>
+    <li><a class="dropdown-item" href="#moisturizer" onclick="scrollToKategori('moisturizer'); closeDropdown()">Moisturizer</a></li>
+    <li><a class="dropdown-item" href="#serum" onclick="scrollToKategori('serum'); closeDropdown()">Serum</a></li>
+    <li><a class="dropdown-item" href="#sunscreen" onclick="scrollToKategori('sunscreen'); closeDropdown()">Sunscreen</a></li>
+    <li><a class="dropdown-item" href="#mask" onclick="scrollToKategori('masker'); closeDropdown()">Masker & Lip Serum</a></li>
+    <li><a class="dropdown-item" href="#clenser" onclick="scrollToKategori('clenser'); closeDropdown()">Clenser</a></li>
+  </ul>
+</li>
           <li class="nav-item">
             <a class="nav-link fw-bold animate__animated animate__fadeInDown" style="animation-duration: 3s;"
               href="#testimoni">Testimonial</a>
