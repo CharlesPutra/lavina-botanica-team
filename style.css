@@ -487,5 +487,7 @@ iframe {
 }
 
 @media (max-width: 576px) {
-
+  #about{
+    overflow: hidden;
+  }
 }
