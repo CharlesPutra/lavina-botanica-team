@@ -433,7 +433,7 @@ iframe {
   } */
   .row{
     flex-direction: row;
-    overflow-x: auto;
+    /* overflow-x: auto; */
   }
   .col{
     min-width: 100px;
