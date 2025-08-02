@@ -183,20 +183,19 @@
       <!-- Hiasan Daun Kiri -->
 <img src="img/daun.png" 
      alt="Leaf Left"
-     style="position: absolute; top: 90px; left: 5%; width: 200px; height:200px; opacity: 0.2; z-index: 1; transform: rotate(-25deg);" />
-
+     style="position: absolute; top: 90px; left: 5%; width: 200px; height:200px; opacity: 0.2; z-index: 2; transform: rotate(-25deg);" />
 
 <!-- Hiasan Daun Kanan -->
 <img src="img/daun - Copy.png"
      alt="Leaf Right"
-     style="position: absolute; top: 90px; right: 5%; width: 100px; height: 100px; opacity: 0.2; z-index: 1; transform: rotate(25deg) scaleX(-1);" />
+     style="position: absolute; top: 90px; right: 5%; width: 100px; height: 100px; opacity: 0.2; z-index: 2; transform: rotate(25deg) scaleX(-1);" />
 
 
       <!-- Produk 1 -->
       <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-duration="1200">
         <div class="col-md-6 text-center">
           <img src="img/mousturizer_putih-removebg-preview.png" alt="Brightening Moisturizer" class="img-fluid floating"
-            style="max-width: 300px;" />
+            style="max-width: 300px;z-index: 1;"/>
         </div>
         <div class="col-md-6">
           <h3 class="fw-bold" style="color: #6d8c6f;">
@@ -254,7 +253,7 @@
       <!-- Hiasan Daun Kiri -->
 <img src="img/daun.png" 
      alt="Leaf Left"
-     style="position: absolute; top: 1px; left: 2%; width: 200px; height:200px; opacity: 0.2; z-index: 1; transform: rotate(-25deg);" />
+     style="position: absolute; top: 1px; left: 0%; width: 200px; height:200px; opacity: 0.2; z-index: 1; transform: rotate(-25deg);" />
 
           <h3 class="fw-bold" style="color: #4c8782;">
             Nourishing Lip Serum <span class="badge bg-success">Best Seller</span>
@@ -283,7 +282,7 @@
   <!-- <div class="container py-5"> -->
     <div class="produk-section pt-5 ">
   <div class="container">
-  <div class="row g-4">
+   <div class="produk-row d-flex flex-wrap gap-4">
 
     <!-- CARD 1 -->
     <div data-aos="fade-down" data-aos-duration="1000" class="col-md-3" id="facewash">
@@ -304,7 +303,7 @@
             <h5 class="modal-title">pH Balanced</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
-          <div class="modal-body row">
+          <div class="modal-body row modal-produk">
             <div class="col-md-5">
               <img src="img/face wash.png" height="200" width="200" class="img-fluid" alt="Produk 1">
             </div>
@@ -346,7 +345,7 @@
             <h5 class="modal-title">Cantella & Tea Tree</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
-          <div class="modal-body row">
+          <div class="modal-body row modal-produk">
             <div class="col-md-5">
               <img src="img/facewash ver2.png" height="200" width="200" class="img-fluid" alt="Produk 2">
             </div>
@@ -370,7 +369,7 @@
 
     <!-- CARD 3 -->
     <!-- <div class="container py-5"> -->
-    <div class="row g-4">
+    <div class="produk-row d-flex flex-wrap gap-4">
       <div data-aos="fade-down"  data-aos-duration="1000" class="col-md-3" id="moisturizer">
         <div class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#produk3">
           <img src="img/mousturizer putih.jpeg" class="card-img-top" alt="produk3">
@@ -389,7 +388,7 @@
               <h5 class="modal-title">Brightening Moisturizer</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body row">
+            <div class="modal-body row modal-produk">
               <div class="col-md-5">
                 <img src="img/mousturizer putih.jpeg" height="200" width="200" class="img-fluid" alt="produk 3">
               </div>
@@ -429,7 +428,7 @@
               <h5 class="modal-title">Anti Wrinkle Cream</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body row">
+            <div class="modal-body row modal-produk">
               <div class="col-md-5">
                 <img src="img/mousturizer merah.jpeg" height="200" width="200" class="img-fluid" alt="Produk4">
               </div>
@@ -470,7 +469,7 @@
               <h5 class="modal-title">Texture Cream</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body row">
+            <div class="modal-body row modal-produk">
               <div class="col-md-5">
                 <img src="img/mousturizer abu.jpeg" height="200" width="200" class="img-fluid" alt="produk5">
               </div>
@@ -492,7 +491,7 @@
       </div>
       <!-- CARD 6 -->
       <!-- <div class="container py-5"> -->
-      <div class="row g-4">
+      <div class="produk-row d-flex flex-wrap gap-4">
         <div data-aos="fade-down" data-aos-duration="1000" class="col-md-3" id="serum">
           <div class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#produk6">
             <img src="img/serum1.jpeg" class="card-img-top" alt="produk6">
@@ -503,7 +502,7 @@
           </div>
         </div>
 
-        <!-- Modal 3 -->
+        <!-- Modal 6 -->
         <div class="modal fade" id="produk6" tabindex="-1">
           <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
@@ -511,7 +510,7 @@
                 <h5 class="modal-title">Hydrating Serum</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
-              <div class="modal-body row">
+              <div class="modal-body row modal-produk">
                 <div class="col-md-5">
                   <img src="img/serum1.jpeg" height="200" width="200" class="img-fluid" alt="produk6">
                 </div>
@@ -532,7 +531,7 @@
           </div>
         </div>
 
-        <!-- CARD 4 -->
+        <!-- CARD 7 -->
         <div class="col-md-3">
           <div data-aos="fade-down" data-aos-duration="1000" class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#produk7">
             <img src="img/serum2.jpeg" class="card-img-top" alt="produk7">
@@ -543,7 +542,7 @@
           </div>
         </div>
 
-        <!-- Modal 4 -->
+        <!-- Modal 7 -->
         <div class="modal fade" id="produk7" tabindex="-1">
           <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
@@ -551,7 +550,7 @@
                 <h5 class="modal-title">Acne Brightening Serum</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
-              <div class="modal-body row">
+              <div class="modal-body row modal-produk">
                 <div class="col-md-5">
                   <img src="img/serum2.jpeg"height="200" width="200" class="img-fluid" alt="produk7">
                 </div>
@@ -572,7 +571,7 @@
           </div>
         </div>
 
-        <!-- CARD 5 -->
+        <!-- CARD 8 -->
         <div class="col-md-3">
           <div data-aos="fade-down" data-aos-duration="1000" class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#produk8">
             <img src="img/serum3.jpeg" class="card-img-top" alt="produk8">
@@ -583,7 +582,7 @@
           </div>
         </div>
 
-        <!-- Modal 5 -->
+        <!-- Modal 8 -->
         <div class="modal fade" id="produk8" tabindex="-1">
           <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
@@ -591,7 +590,7 @@
                 <h5 class="modal-title">Brightening Serum</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
-              <div class="modal-body row">
+              <div class="modal-body row modal-produk">
                 <div class="col-md-5">
                   <img src="img/serum3.jpeg" height="200" width="200" class="img-fluid" alt="produk8">
                 </div>
@@ -632,7 +631,7 @@
                   <h5 class="modal-title">Anti Wrinkle Dark Spot</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body row">
+                <div class="modal-body row modal-produk">
                   <div class="col-md-5">
                     <img src="img/serum4.jpeg" height="200" width="200" class="img-fluid" alt="produk9">
                   </div>
@@ -655,7 +654,7 @@
 
           <!-- CARD 10 -->
           <!-- <div class="container py-5"> -->
-          <div class="row g-4">
+          <div class="produk-row d-flex flex-wrap gap-4">
             <div data-aos="fade-down" data-aos-duration="1000" class="col-md-3" id="sunscreen">
               <div class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#produk10">
                 <img src="img/sunscreen putih.jpeg" class="card-img-top" alt="produk10">
@@ -674,7 +673,7 @@
                     <h5 class="modal-title">Daily Glow Sunscreen</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                   </div>
-                  <div class="modal-body row">
+                  <div class="modal-body row modal-produk">
                     <div class="col-md-5">
                       <img src="img/sunscreen putih.jpeg" height="200" width="200" class="img-fluid" alt="produk10">
                     </div>
@@ -714,7 +713,7 @@
                     <h5 class="modal-title">Acne Balance Sunscreen</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                   </div>
-                  <div class="modal-body row">
+                  <div class="modal-body row modal-produk">
                     <div class="col-md-5">
                       <img src="img/suncreen hijau.jpeg" height="200" width="200" class="img-fluid" alt="produk11">
                     </div>
@@ -754,7 +753,7 @@
                     <h5 class="modal-title">Sunscreen spray All Skin Type</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                   </div>
-                  <div class="modal-body row">
+                 <div class="modal-body row modal-produk">
                     <div class="col-md-5">
                       <img src="img/spray putih.jpeg" height="200" width="200" class="img-fluid" alt="produk12">
                     </div>
@@ -775,9 +774,9 @@
               </div>
             </div>
 
-            <!-- CARD 16 -->
+            <!-- CARD 13 -->
             <!-- <div class="container py-5"> -->
-            <div class="row g-4">
+            <div class="produk-row d-flex flex-wrap gap-4">
               <div data-aos="fade-down" data-aos-duration="1000" class="col-md-3" id="mask">
                 <div class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#produk16">
                   <img src="img/lip2.jpeg" class="card-img-top" alt="produk16">
@@ -788,7 +787,7 @@
                 </div>
               </div>
 
-              <!-- Modal 16 -->
+              <!-- Modal 13 -->
               <div class="modal fade" id="produk16" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                   <div class="modal-content">
@@ -796,7 +795,7 @@
                       <h5 class="modal-title">Exfoliating Serum</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
-                    <div class="modal-body row">
+                    <div class="modal-body row modal-produk">
                       <div class="col-md-5">
                         <img src="img/lip2.jpeg" height="200" width="200" class="img-fluid" alt="produk16">
                       </div>
@@ -815,7 +814,7 @@
                 </div>
               </div>
 
-              <!-- CARD 17 -->
+              <!-- CARD 14 -->
               <div class="col-md-3">
                 <div data-aos="fade-down" data-aos-duration="1000" class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#produk17">
                   <img src="img/mask.jpeg" class="card-img-top" alt="produk17">
@@ -834,7 +833,7 @@
                       <h5 class="modal-title">Mask Hydrating Skin</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
-                    <div class="modal-body row">
+                   <div class="modal-body row modal-produk">
                       <div class="col-md-5">
                         <img src="img/mask.jpeg"height="200" width="200" class="img-fluid" alt="produk14">
                       </div>
@@ -856,9 +855,9 @@
               </div>
 
 
-              <!-- CARD 13 -->
+              <!-- CARD 15 -->
               <!-- <div class="container py-5"> -->
-              <div class="row g-4">
+              <div class="produk-row d-flex flex-wrap gap-4">
                 <div data-aos="fade-down" data-aos-duration="1000" class="col-md-3" id="clenser">
                   <div class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#produk13">
                     <img src="img/eksfoliasi serum.jpeg " class="card-img-top" alt="produk13">
@@ -869,7 +868,7 @@
                   </div>
                 </div>
 
-                <!-- Modal 13 -->
+                <!-- Modal 15-->
                 <div class="modal fade" id="produk13" tabindex="-1">
                   <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
@@ -877,7 +876,7 @@
                         <h5 class="modal-title">Exfoliating Serum</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                       </div>
-                      <div class="modal-body row">
+                      <div class="modal-body row modal-produk">
                         <div class="col-md-5">
                           <img src="img/eksfoliasi serum.jpeg" height="200" width="200" class="img-fluid" alt="produk13">
                         </div>
@@ -898,7 +897,7 @@
                   </div>
                 </div>
 
-                <!-- CARD 14 -->
+                <!-- CARD 16 -->
                 <div class="col-md-3">
                   <div data-aos="fade-down" data-aos-duration="1000" class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#produk14">
                     <img src="img/oil cleanser.jpeg" class="card-img-top" alt="produk14">
@@ -909,7 +908,7 @@
                   </div>
                 </div>
 
-                <!-- Modal 14 -->
+                <!-- Modal 16 -->
                 <div class="modal fade" id="produk14" tabindex="-1">
                   <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
@@ -917,7 +916,7 @@
                         <h5 class="modal-title">Oil Clenser</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                       </div>
-                      <div class="modal-body row">
+                     <div class="modal-body row modal-produk">
                         <div class="col-md-5">
                           <img src="img/oil cleanser.jpeg" height="200" width="200"class="img-fluid" alt="produk14">
                         </div>
@@ -938,7 +937,7 @@
                   </div>
                 </div>
 
-                <!-- CARD 15 -->
+                <!-- CARD 17 -->
                 <div class="col-md-3">
                   <div data-aos="fade-down" data-aos-duration="1000" class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#produk15">
                     <img src="img/micelar water.jpeg" class="card-img-top" alt="produk15">
@@ -949,7 +948,7 @@
                   </div>
                 </div>
 
-                <!-- Modal 15 -->
+                <!-- Modal 17 -->
                 <div data-aos="fade-down" data-aos-duration="2000" class="modal fade" id="produk15" tabindex="-1">
                   <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
@@ -957,7 +956,7 @@
                         <h5 class="modal-title">Micellar Wather</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                       </div>
-                      <div class="modal-body row">
+                      <div class="modal-body row modal-produk">
                         <div class="col-md-5">
                           <img src="img/micelar water.jpeg"height="200" width="200" class="img-fluid" alt="produk15">
                         </div>

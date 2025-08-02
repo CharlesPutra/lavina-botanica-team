@@ -436,3 +436,41 @@ iframe {
    max-width: 100px;
   }
 }
+
+@media (max-width: 576px) {
+  .modal-produk {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .modal-produk img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .modal-produk .col-md-5,
+  .modal-produk .col-md-7 {
+    width: 100%;
+  }
+
+  .modal-produk p,
+  .modal-produk label {
+    text-align: left;
+  }
+
+  .modal-produk input[type="number"] {
+    width: auto !important;
+  }
+
+  .modal-produk .btn-dark {
+    width: 100%;
+    text-align: center;
+  }
+}
+
