@@ -23,11 +23,11 @@
       <label for="pulau">Pulau:</label>
       <select id="pulau" name="pulau" required>
         <option value="">Pilih Pulau</option>
-        <option value="jawa">Jawa</option>
-        <option value="sumatera">Sumatera</option>
-        <option value="kalimantan">Kalimantan</option>
-        <option value="sulawesi">Sulawesi</option>
-        <option value="papua">Papua</option>
+        <option value="Jawa">Jawa</option>
+        <option value="Sumatera">Sumatera</option>
+        <option value="Kalimantan">Kalimantan</option>
+        <option value="Sulawesi">Sulawesi</option>
+        <option value="Papua">Papua</option>
       </select>
 
       <label for="kabupaten">Kabupaten/Kota:</label>
@@ -45,13 +45,13 @@
       <label for="pembayaran">Metode Pembayaran:</label>
       <select id="pembayaran" name="pembayaran" required>
         <option value="">Pilih Metode</option>
-        <option value="bri">Bank BRI</option>
-        <option value="bni">Bank BNI</option>
-        <option value="bca">Bank BCA</option>
-        <option value="visa">Kartu Visa</option>
-        <option value="dana">Dana</option>
-        <option value="gopay">Gopay</option>
-        <option value="ovo">OVO</option>
+        <option value="BRI">Bank BRI</option>
+        <option value="BNI">Bank BNI</option>
+        <option value="BCA">Bank BCA</option>
+        <option value="Visa">Kartu Visa</option>
+        <option value="Dana">Dana</option>
+        <option value="GoPay">Gopay</option>
+        <option value="OVO">OVO</option>
       </select>
 
       <div id="rekening" class="rekening-box"></div>
@@ -61,41 +61,48 @@
   </div>
 
   <script>
-    document.getElementById("formPemesanan").addEventListener("submit", function (e) {
-      e.preventDefault();
-      window.location.href = "sukses.html";
+    const pembayaranEl = document.getElementById("pembayaran");
+    const rekeningBox = document.getElementById("rekening");
+
+    const dataRekening = {
+      BRI: "BRI - 1234-01-987654-53-6 a.n. Lavina Botanica",
+      BNI: "BNI - 7890-12-345678-90 a.n. Lavina Botanica",
+      BCA: "BCA - 321-987-6543 a.n. Lavina Botanica",
+      Visa: "Gunakan kartu Visa anda saat checkout.",
+      Dana: "DANA - 0812-3456-7890 a.n. Lavina Botanica",
+      GoPay: "GoPay - 0812-3456-7891 a.n. Lavina Botanica",
+      OVO: "OVO - 0812-3456-7892 a.n. Lavina Botanica"
+    };
+
+    pembayaranEl.addEventListener("change", function () {
+      const metode = pembayaranEl.value;
+      if (metode) {
+        rekeningBox.innerHTML = `<p><strong>${dataRekening[metode]}</strong></p>`;
+      } else {
+        rekeningBox.innerHTML = "";
+      }
     });
 
-    document.getElementById("pembayaran").addEventListener("change", function () {
-      const rekeningBox = document.getElementById("rekening");
-      const metode = this.value;
-      let html = "";
+    document.getElementById("formPemesanan").addEventListener("submit", function (e) {
+      e.preventDefault();
 
-      switch (metode) {
-        case "bri":
-          html = "<p><strong>BRI</strong><br>1234-01-987654-53-6<br>a.n. Lavina Botanica</p>";
-          break;
-        case "bni":
-          html = "<p><strong>BNI</strong><br>7890-12-345678-90<br>a.n. Lavina Botanica</p>";
-          break;
-        case "bca":
-          html = "<p><strong>BCA</strong><br>321-987-6543<br>a.n. Lavina Botanica</p>";
-          break;
-        case "visa":
-          html = "<p><strong>Visa</strong><br>Gunakan kartu Visa anda saat checkout.</p>";
-          break;
-        case "dana":
-          html = "<p><strong>DANA</strong><br>0812-3456-7890<br>a.n. Lavina Botanica</p>";
-          break;
-        case "gopay":
-          html = "<p><strong>GoPay</strong><br>0812-3456-7891<br>a.n. Lavina Botanica</p>";
-          break;
-        case "ovo":
-          html = "<p><strong>OVO</strong><br>0812-3456-7892<br>a.n. Lavina Botanica</p>";
-          break;
-      }
+      const dataPesanan = {
+        nama: document.getElementById("nama").value,
+        email: document.getElementById("email").value,
+        whatsapp: document.getElementById("whatsapp").value,
+        pulau: document.getElementById("pulau").value,
+        kabupaten: document.getElementById("kabupaten").value,
+        kecamatan: document.getElementById("kecamatan").value,
+        desa: document.getElementById("desa").value,
+        alamat: document.getElementById("alamat").value,
+        pembayaran: document.getElementById("pembayaran").value,
+        rekening: rekeningBox.innerText,
+        estimasi: "3-5 Hari Kerja",
+        status: "Sedang diproses"
+      };
 
-      rekeningBox.innerHTML = html;
+      localStorage.setItem("pesananUser", JSON.stringify(dataPesanan));
+      window.location.href = "sukses.html";
     });
   </script>
 </body>

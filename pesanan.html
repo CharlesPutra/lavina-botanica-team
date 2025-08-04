@@ -2,27 +2,93 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lihat Pesanan Anda - Lavina Botanica</title>
-  <link rel="stylesheet" href="pesanan.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pesanan Anda | Lavina Botanica</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f3fdf4;
+      padding: 40px 20px;
+    }
+
+    .pesanan-container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #5a8f6f;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .pesanan-detail p {
+      margin: 10px 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #5a8f6f;
+    }
+
+    .btn-back {
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 24px;
+      background-color: #5a8f6f;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 500;
+      width: fit-content;
+    }
+
+    .btn-back:hover {
+      background-color: #49775d;
+    }
+  </style>
 </head>
-<body class="order-page">
-  <div class="order-container">
-    <h1>Detail Pesanan Anda</h1>
-    <div class="order-box">
-      <p><strong>Nama:</strong> Sherlyana Putri</p>
-      <p><strong>Alamat:</strong> Desa Muncar, Kecamatan Muncar, Kabupaten Banyuwangi, Jawa Timur</p>
-      <p><strong>Nomor WA:</strong> 0812-3456-7890</p>
-      <p><strong>Email:</strong> sherlyana@example.com</p>
-      <p><strong>Metode Pembayaran:</strong> Transfer ke BRI - 1234567890 a.n Lavina Botanica</p>
-      <p><strong>Produk:</strong> Aloe Vera Serum</p>
-      <p><strong>Status:</strong> <span class="status">Sedang diproses</span></p>
-      <p><strong>Estimasi Pengiriman:</strong> 3-5 Hari Kerja</p>
+<body>
+  <div class="pesanan-container">
+    <h2>Detail Pesanan Anda</h2>
+    <div class="pesanan-detail" id="dataPesanan">
+      <!-- Data pesanan akan muncul di sini -->
     </div>
 
-    <div class="order-buttons">
-      <a href="index.html" class="btn">Kembali ke Beranda</a>
-    </div>
+    <a href="index.html" class="btn-back">Kembali ke Beranda</a>
   </div>
+
+  <script>
+    const dataPesanan = JSON.parse(localStorage.getItem("pesananUser"));
+    const container = document.getElementById("dataPesanan");
+
+    if (dataPesanan) {
+      container.innerHTML = `
+        <p><span class="label">Nama:</span> ${dataPesanan.nama}</p>
+        <p><span class="label">Email:</span> ${dataPesanan.email}</p>
+        <p><span class="label">No. WhatsApp:</span> ${dataPesanan.whatsapp}</p>
+        <p><span class="label">Pulau:</span> ${dataPesanan.pulau}</p>
+        <p><span class="label">Kabupaten/Kota:</span> ${dataPesanan.kabupaten}</p>
+        <p><span class="label">Kecamatan:</span> ${dataPesanan.kecamatan}</p>
+        <p><span class="label">Desa/Kelurahan:</span> ${dataPesanan.desa}</p>
+        <p><span class="label">Alamat Lengkap:</span> ${dataPesanan.alamat}</p>
+        <p><span class="label">Metode Pembayaran:</span> ${dataPesanan.pembayaran}</p>
+        <p><span class="label">Nomor Rekening / Info Bayar:</span> ${dataPesanan.rekening}</p>
+        <p><span class="label">Estimasi Pengiriman:</span> ${dataPesanan.estimasi}</p>
+        <p><span class="label">Status:</span> ${dataPesanan.status}</p>
+      `;
+    } else {
+      container.innerHTML = "<p>Belum ada data pesanan ditemukan.</p>";
+    }
+  </script>
 </body>
 </html>
