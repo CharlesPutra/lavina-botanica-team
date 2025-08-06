@@ -578,3 +578,19 @@ iframe {
     order: 2;
   }
 }
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  order: 2; /* default: desktop di bawah keterangan lain */
+}
+
+/* Mobile: deskripsi dipindah di atas harga, ukuran, dll */
+@media (max-width: 767px) {
+  .description {
+    order: 0; /* pindah ke atas */
+  }
+}
