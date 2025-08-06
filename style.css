@@ -497,3 +497,84 @@ iframe {
     overflow: hidden;
   }
 }
+
+/* Ukuran modal lebih kecil */
+.modal-custom {
+  max-width: 750px; /* PC */
+}
+
+@media (max-width: 576px) {
+  .modal-custom {
+    max-width: 45%; /* Mobile */
+  }
+}
+
+/* Gambar produk tidak terlalu besar */
+.product-modal-img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Info produk */
+.product-info {
+  padding: 0 10px;
+  text-align: left;
+}
+
+/* Input jumlah lebih kecil */
+.jumlah-input {
+  width: 70px;
+  padding: 6px;
+}
+
+/* Tombol buy */
+.btn-buy {
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  max-width: 280px; /* biar ga terlalu panjang di PC */
+}
+
+.product-desc {
+  font-size: 0.9rem;
+  line-height: 1.4;
+   text-align: left;
+   font-weight: bold;
+}
+
+
+
+/* Default (mobile) - Deskripsi di atas */
+.description.desktop {
+  display: none;
+}
+
+.description.mobile {
+  display: block;
+}
+
+/* PC / Desktop (ukuran layar >= 768px) - Deskripsi di bawah */
+@media screen and (min-width: 768px) {
+  .description.mobile {
+    display: none;
+  }
+
+  .description.desktop {
+    display: block;
+  }
+
+  .product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .product-image {
+    order: 1;
+  }
+
+  .description.desktop {
+    order: 2;
+  }
+}
