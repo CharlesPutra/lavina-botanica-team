@@ -1,0 +1,199 @@
+/* Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans';
+    color: #333;
+    background-color: #fdfdfd;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    /* padding: 2rem 0; */
+}
+
+/* Hero */
+.hero {
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero img {
+    height: 60vh;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.hero-content {
+    z-index: 10;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+
+/* Section Titles */
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/* Story */
+.story {
+    background: #f1f8f4;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+/* Vision & Mission */
+.vision-mission .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.vision-mission .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 576px) {
+  .vision-mission .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Biar card di tengah */
+    gap: 15px; /* Jarak antar card */
+  }
+
+  /* .vision-mission .container{
+   
+  } */
+
+  .vision-mission .card {
+    width: 100%; /* Lebar penuh di HP */
+    max-width: 320px; /* Biar gak terlalu lebar */
+    text-align: center; /* Teks di tengah */
+  }
+  
+  .vision-mission p{
+    text-align: left;
+  }
+
+
+  /* team card */
+  .team .team-grid{
+    grid: none;
+  }
+
+  @media (max-width: 576px) {
+  .team-grid {
+    display: none;
+  }
+}
+
+}
+
+
+/* Philosophy */
+.philosophy .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.philosophy img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Certification */
+.certification {
+    padding: 50px 20px;
+    background-color: #f8fdf8;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d7a36;
+    margin-bottom: 30px;
+}
+
+.cert-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cert-card {
+    background-color: #e6f5ea;
+    border-radius: 15px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.cert-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.cert-card span {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    background-color: #d4edda;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+
+/* Team */
+.team .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+.team .team-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.team .team-card p {
+    margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .philosophy .grid {
+        grid-template-columns: 1fr;
+    }
+    .hero {
+        height: 40vh;
+    }
+}
