@@ -56,58 +56,63 @@
 
 /* footer */
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f6f9f6;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f6f9f6;
 }
 
 .footer-link {
-    color: #ffffff;
-    text-decoration: none;
-    transition: all 0.3s ease;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .footer-link:hover {
-    color: #ffebcd;
-    text-decoration: underline;
+  color: #ffebcd;
+  text-decoration: underline;
 }
 
 .footer-icon {
-    color: #ffffff;
-    font-size: 1.5rem;
-    margin-right: 0.75rem;
-    transition: color 0.3s ease;
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  transition: color 0.3s ease;
 }
 
 .footer-icon:hover {
-    color: #6fa87a;
+  color: #6fa87a;
 }
 
 /* footer end */
 
 @media (max-width:767px) {
-    #logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    #text {
-        order: 2;
-    }
+  #text {
+    order: 2;
+  }
 
-    #form{
-        order: 2;
-    }
-    body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
+  #form {
+    order: 2;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .leaf{
+    display: none;
+  }
 }
 
 /* Hilangkan scroll horizontal di mobile */
@@ -127,6 +132,9 @@ body {
 }
 
 /* Pastikan elemen grid tidak melebihi layar */
-.container, .row, .col, .grid {
+.container,
+.row,
+.col,
+.grid {
   max-width: 100%;
 }
