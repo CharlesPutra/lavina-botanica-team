@@ -454,54 +454,42 @@ iframe {
   }
 }
 
+/* Batas tinggi modal agar tidak terlalu panjang */
+.modal-custom .modal-content {
+  max-width: 100% !important;
+  overflow-y: auto;
+}
+
+/* Modal lebar di mobile */
 @media (max-width: 576px) {
-  .modal-produk {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    scroll-margin-top: 100px;
+  .modal-dialog {
+    max-width: 100% !important;
+    margin: 0;
   }
 
-  .modal-produk img {
-    display: block;
-    margin: 0 auto;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    max-width: 100%;
+  .modal-content {
     height: auto;
-    object-fit: cover;
+    border-radius: 0; /* kalau mau rata, hapus kalau mau rounded */
+  }
+
+  /* Biar gambar dan teks sejajar di mobile */
+  .modal-produk .row {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    align-items: flex-start;
   }
 
   .modal-produk .col-md-5,
   .modal-produk .col-md-7 {
-    width: 100%;
+    width: 50% !important;
   }
 
-  .modal-produk p,
-  .modal-produk label {
-    text-align: left;
-  }
-
-  .modal-produk input[type="number"] {
-    width: auto !important;
-  }
-
-  .modal-produk .btn-dark {
-    width: 100%;
-    text-align: center;
+  .modal-produk img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
-@media (max-width: 576px) {
-  #about {
-    overflow: hidden;
-  }
-}
-
-/* Ukuran modal lebih kecil */
-.modal-custom {
-  max-width: 750px; /* PC */
-}
 
 @media (max-width: 576px) {
   .modal-custom {

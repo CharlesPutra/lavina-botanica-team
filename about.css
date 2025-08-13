@@ -54,7 +54,7 @@ section h2 {
 .story {
     background: #f1f8f4;
     padding: 3rem 0;
-    text-align: center;
+    text-align: justify;
 }
 
 /* Vision & Mission */
@@ -171,6 +171,23 @@ section h2 {
     background-color: #d4edda;
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
+
+@media (max-width: 576px) {
+  .cert-grid {
+    flex-direction: row;
+    flex-wrap: nowrap; /* biar tetap satu baris */
+    overflow-x: auto;  /* kalau nggak muat, bisa digeser horizontal */
+    gap: 15px; /* jarak antar card di mobile */
+    padding-bottom: 10px; /* ruang buat scroll bar */
+  }
+
+  .cert-card {
+    flex: 0 0 auto; /* supaya ukuran card fix, tidak menyempit */
+    width: 120px;   /* kecilin biar muat di layar hp */
+    height: 120px;
+  }
+}
+
 
 
 /* Team */
