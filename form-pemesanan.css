@@ -81,14 +81,30 @@ button:hover {
 
 @media (max-width: 576px) {
   .form-container input {
-    width: 300px;
+    width: 400px;
   }
 
   .form-container select {
-    width: 320px;
+    width: 430px;
   }
 
   .form-container textarea {
-    width: 300px;
+    width: 400px;
   }
+}
+
+/* Hilangkan scroll horizontal di mobile */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Pastikan gambar carousel responsive */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Pastikan elemen grid tidak melebihi layar */
+.container, .row, .col, .grid {
+  max-width: 100%;
 }

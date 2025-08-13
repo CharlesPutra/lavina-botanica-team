@@ -214,3 +214,20 @@ section h2 {
         height: 40vh;
     }
 }
+
+
+/* Hilangkan scroll horizontal di mobile */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Pastikan gambar carousel responsive */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Pastikan elemen grid tidak melebihi layar */
+.container, .row, .col, .grid {
+  max-width: 100%;
+}
