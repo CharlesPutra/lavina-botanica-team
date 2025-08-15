@@ -1,35 +1,49 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f4f7f5;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 
+/* Wrapper agar konten di tengah secara horizontal */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px; /* biar ada jarak dari atas & bawah */
+}
+
+/* Container form */
 .form-container {
   background-color: #fff;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   max-width: 600px;
-  width: 90%;
+  width: 100%;
 }
 
+/* Logo */
 .logo {
   width: 120px;
   display: block;
   margin: 0 auto 20px auto;
 }
 
+/* Judul */
 h1 {
   text-align: center;
   color: #2d572c;
   margin-bottom: 30px;
 }
 
+/* Label */
 form label {
   display: block;
   margin-bottom: 8px;
@@ -37,6 +51,7 @@ form label {
   color: #333;
 }
 
+/* Input, select, textarea */
 form input,
 form textarea,
 form select {
@@ -50,9 +65,10 @@ form select {
 
 form textarea {
   resize: vertical;
-  height: 80px;
+  min-height: 80px;
 }
 
+/* Box rekening */
 .rekening-box {
   background-color: #f0fdf4;
   border-left: 4px solid #4CAF50;
@@ -62,6 +78,7 @@ form textarea {
   color: #2e7d32;
 }
 
+/* Tombol */
 button {
   width: 100%;
   padding: 12px;
@@ -79,32 +96,40 @@ button:hover {
   background-color: #388e3c;
 }
 
+/* Responsive mobile */
 @media (max-width: 576px) {
-  .form-container input {
-    width: 400px;
+  .form-wrapper {
+    padding: 20px 10px;
   }
 
-  .form-container select {
-    width: 430px;
+  .form-container {
+    padding: 20px;
   }
 
-  .form-container textarea {
-    width: 400px;
+  h1 {
+    font-size: 18px;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    font-size: 13px;
+    padding: 8px;
   }
 }
 
-/* Hilangkan scroll horizontal di mobile */
+/* Hilangkan scroll horizontal */
 html, body {
   overflow-x: hidden;
 }
 
-/* Pastikan gambar carousel responsive */
+/* Gambar carousel responsive */
 .carousel-item img {
   width: 100%;
   height: auto;
 }
 
-/* Pastikan elemen grid tidak melebihi layar */
+/* Grid aman di mobile */
 .container, .row, .col, .grid {
   max-width: 100%;
 }
