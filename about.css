@@ -260,3 +260,27 @@ section h2 {
 }
 }
 
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+html, body {
+    overflow-x: hidden; /* hilangin scroll ke samping */
+}
+
+body {
+    padding-top: 70px; /* sesuaikan tinggi navbar kamu */
+}
+
+.navbar {
+    position: fixed; /* biar selalu nempel di atas */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050; /* di atas semua elemen */
+}
+
+
