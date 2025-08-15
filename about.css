@@ -283,4 +283,23 @@ body {
     z-index: 1050; /* di atas semua elemen */
 }
 
+/* Pastikan carousel mengikuti tinggi layar di HP */
+.hero .carousel-item img {
+    height: 100vh; /* penuh layar */
+    object-fit: cover; /* potong gambar biar proporsional */
+}
+
+/* Hilangkan margin bawaan */
+.hero,
+.hero .carousel,
+.hero .carousel-item {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Pastikan tidak ada space ekstra dari tombol navigasi */
+.carousel-control-prev,
+.carousel-control-next {
+    bottom: 0;
+}
 
